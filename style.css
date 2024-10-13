@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('hearts-background.png'); /* Replace with the actual path to the background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background-color: #67021b; /* Velvet Red */
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* Circular image */
+  margin-right: 20px;
+}
+
+.header-content {
+  text-align: left;
+}
+
+.header h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.header p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* About Me Section */
+.about {
+  background-color: white;
+  margin: 30px auto;
+  padding: 20px;
+  width: 60%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Button Styling */
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #67021b;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #67021b; /* Darker velvet red */
+}
+
+/* Footer */
+.footer {
+  background-color: #67021b; /* Velvet Red */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.footer a {
+  color: #f0f0f0; /* Light pink for links */
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
