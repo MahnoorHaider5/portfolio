@@ -1,0 +1,211 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #dfe6f1;
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+.dark-mode .navbar {
+  background-color: #1e1e1e;
+}
+
+.dark-mode section {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+}
+
+.dark-mode .overlay {
+  background: rgba(30, 30, 30, 0.8);
+  color: #f5f5f5;
+}
+
+.dark-mode .button {
+  background-color: #f5f5f5;
+  color: #1e1e1e;
+}
+
+.dark-mode .button:hover {
+  background-color: #ccc;
+}
+
+/* Scroll Progress Bar */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: #e69113;
+  width: 0%;
+  z-index: 999;
+}
+
+/* Theme Toggle Button */
+#toggle-theme {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #e69113;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  transition: background 0.3s;
+}
+.navbar .logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-links li a:hover {
+  color: #e69113;
+}
+.dark-mode .nav-links li a {
+  color: #f5f5f5;
+}
+
+/* Hero Section */
+.hero {
+  background: url("background img.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 40px;
+}
+.overlay {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(6px);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.overlay h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+.overlay h1 span {
+  color: #ff7e5f;
+}
+.overlay p {
+  font-size: 18px;
+}
+
+/* Sections */
+section {
+  padding: 100px 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  transition: background 0.3s, color 0.3s;
+}
+section h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #eee;
+  display: inline-block;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e69113;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.button:hover {
+  background-color: #cc7a0b;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  margin: 10px 0;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #e69113;
+  color: white;
+  font-size: 14px;
+}
+.dark-mode footer {
+  background-color: #333;
+  color: #eee;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero {
+    justify-content: center;
+    text-align: center;
+    padding-left: 40px;
+  }
+  .overlay {
+    max-width: 90%;
+    padding: 20px;
+  }
+  .overlay h1 {
+    font-size: 28px;
+  }
+  .overlay p {
+    font-size: 16px;
+  }
+}
